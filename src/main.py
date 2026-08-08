@@ -230,7 +230,8 @@ async def _run_actor():
 
 def main():
     if Actor is not None:
-        Actor.main(_run_actor)
+        import asyncio
+        asyncio.run(_run_actor())
         return 0
     # Legacy fallback (no Apify SDK)
     user_input = _read_input_legacy()
