@@ -8,6 +8,9 @@
   "input": "./INPUT_SCHEMA.json",
   "dockerfile": "./Dockerfile",
   "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Tackleberry Scraper Output",
+    "description": "Scraped product data from Tackleberry B-net",
     "type": "object",
     "properties": {
       "productId": {
