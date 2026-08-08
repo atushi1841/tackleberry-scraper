@@ -1,0 +1,81 @@
+{
+  "actorSpecification": 1,
+  "name": "tackleberry-scraper",
+  "version": "0.0.1",
+  "buildTag": "latest",
+  "title": "Tackleberry B-net Scraper",
+  "description": "Scrape product data from Tackleberry B-net (https://b-net.tackleberry.co.jp).",
+  "input": "./INPUT_SCHEMA.json",
+  "dockerfile": "./Dockerfile",
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "productId": {
+        "title": "Product ID",
+        "type": "string",
+        "description": "Product ID from URL",
+        "template": "{{productId}}"
+      },
+      "title": {
+        "title": "Product title",
+        "type": "string",
+        "description": "Product title",
+        "template": "{{title}}"
+      },
+      "name": {
+        "title": "Product name",
+        "type": "string",
+        "description": "Alt text of product image",
+        "template": "{{name}}"
+      },
+      "price": {
+        "title": "Price",
+        "type": "string",
+        "description": "Tax-included price",
+        "template": "{{price}}"
+      },
+      "regularPrice": {
+        "title": "Regular price",
+        "type": "string",
+        "description": "Original price",
+        "template": "{{regularPrice}}"
+      },
+      "discountRate": {
+        "title": "Discount rate",
+        "type": "string",
+        "description": "Discount percentage",
+        "template": "{{discountRate}}"
+      },
+      "imageUrl": {
+        "title": "Image URL",
+        "type": "string",
+        "description": "Absolute image URL",
+        "template": "{{imageUrl}}"
+      },
+      "productUrl": {
+        "title": "Product URL",
+        "type": "string",
+        "description": "Absolute product page URL",
+        "template": "{{productUrl}}"
+      },
+      "isUsed": {
+        "title": "Is used",
+        "type": "string",
+        "description": "Whether the item is used",
+        "template": "{{isUsed}}"
+      },
+      "categoryId": {
+        "title": "Category ID",
+        "type": "string",
+        "description": "Category ID used in query",
+        "template": "{{categoryId}}"
+      },
+      "inStock": {
+        "title": "In stock",
+        "type": "string",
+        "description": "Whether the item is in stock",
+        "template": "{{inStock}}"
+      }
+    }
+  }
+}

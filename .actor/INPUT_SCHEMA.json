@@ -1,0 +1,33 @@
+{
+  "title": "Tackleberry Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keyword": {
+      "title": "Search keyword",
+      "type": "string",
+      "description": "Search term, e.g. シマノ",
+      "editor": "textfield"
+    },
+    "categoryId": {
+      "title": "Category ID",
+      "type": "integer",
+      "description": "Category ID from the category search URL",
+      "editor": "number"
+    },
+    "maxItems": {
+      "title": "Maximum items",
+      "type": "integer",
+      "default": 100,
+      "description": "Maximum number of products to scrape",
+      "editor": "number"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "Apify proxy configuration",
+      "editor": "proxy"
+    }
+  },
+  "required": []
+}
