@@ -6,15 +6,15 @@ Extract product data from **@Berry Net** (タックルベリーB-net), one of Ja
 
 ```json
 {
-  "productId": "12345",
-  "title": "シマノ アンタレス DC MD",
-  "name": "シマノ アンタレス DC MD",
-  "price": 29800,
-  "regularPrice": 45000,
-  "discountRate": 34,
-  "imageUrl": "https://b-net.tackleberry.co.jp/upload/save_image/12345.jpg",
-  "productUrl": "https://b-net.tackleberry.co.jp/products/detail/12345",
-  "isUsed": false,
+  "productId": "1234888",
+  "title": "エメラルダスXボート65LS-S・E",
+  "name": "エメラルダスXボート65LS-S・E",
+  "price": 15246,
+  "regularPrice": 21780,
+  "discountRate": 30,
+  "imageUrl": "https://b-net.tackleberry.co.jp/html/upload/save_image/no_image_product.png",
+  "productUrl": "https://b-net.tackleberry.co.jp/products/detail/1234888",
+  "isUsed": true,
   "categoryId": 12,
   "inStock": true
 }
@@ -82,3 +82,7 @@ The site's `robots.txt` allows general crawlers, and this Actor respects those r
 - Category search with used‑item support (`sale_type[]=3`).
 - Pagination (60 items per page).
 - Stock detection.
+
+## Integrations
+
+Works with Apify [Connectors](https://apify.com/integrations) — push results to Slack, Google Sheets, Notion, or Supabase with one click. Trigger on a [Schedule](https://apify.com/docs/schedules) for daily price tracking.
